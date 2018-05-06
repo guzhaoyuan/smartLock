@@ -1,5 +1,4 @@
 from flask import Flask
-import paho.mqtt.publish as publish
 
 app = Flask(__name__)
 
