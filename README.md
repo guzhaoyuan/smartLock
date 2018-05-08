@@ -43,12 +43,14 @@
 这就是通过命令行给topic发信息，再次刷新your_ip:5000可以看到数字改变
 
 4.进一步修改程序
-可以在这个框架下，接收任何mqtt发送的数据，然后再通过一个好看的网页显示，下面的
-[某可以借鉴的github项目](https://github.com/neubatengog/FlaskMqtt/blob/master/server.py)还用到了socketio,之后可以尝试玩耍。
+可以在这个框架下，接收任何mqtt发送的数据，然后再通过一个好看的网页显示，下面的[某可以借鉴的github项目](https://github.com/neubatengog/FlaskMqtt/blob/master/server.py)还用到了socketio,之后可以尝试玩耍。
 
 ## 相关文档
 
 [DO上搭建mqtt server的教程](https://www.digitalocean.com/community/questions/how-to-setup-a-mosquitto-mqtt-server-and-receive-data-from-owntracks)
+
 [flask文档](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application)
+
 [pypi mqtt库文档](https://pypi.org/project/paho-mqtt/#usage-and-api)
+
 [某可以借鉴的github项目](https://github.com/neubatengog/FlaskMqtt/blob/master/server.py)
