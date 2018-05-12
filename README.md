@@ -1,5 +1,9 @@
 # smartLock
 
+## 测试环境
+
+Ubuntu14.04/Mac Python2.7.9+
+
 ## 目前需求
 
 - 一个mqtt server, 用于接收传感器类似物的数据
@@ -17,7 +21,7 @@
 1.安装mqtt server端软件(这些主要是用命令行玩mqtt，方便理解和调试用的)
 
 	sudo apt-get update
-	sudo apt-get install mosquitto mosquitto-client
+	sudo apt-get install mosquitto mosquitto-clients
 
 按照DO上的教程把mqtt server配置好，主要是修改配置文件，增加mqtt user并设置密码，然后
 
@@ -32,7 +36,7 @@
 	pip install flask
 	pip install paho-mqtt
 	export FLASK_APP=server.py
-	python -m flask run #flask语法，=run server.py
+	python -m flask run —host=0.0.0.0#flask语法，=run server.py, host默认是127.0.0.1,需要手动改为接受所有ip的请求
 
 访问 your_ip:5000 可以看到收到的mqtt包的数目
 

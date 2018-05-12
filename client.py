@@ -2,7 +2,8 @@ import paho.mqtt.client as mqtt
 from flask import Flask
 from threading import Thread
 
-host="guzhaoyuan.com"
+#host="guzhaoyuan.com"
+host="127.0.0.1"
 num = 0
 
 def on_connect(client, userdata, flags, rc):
