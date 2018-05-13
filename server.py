@@ -33,6 +33,9 @@ def hello():
 	global num
 	return str(num)
 
+@app.route("/test")
+def test():
+	return "test"
 
 client = mqtt.Client()
 client.on_connect = on_connect
