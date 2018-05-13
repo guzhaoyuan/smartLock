@@ -36,7 +36,8 @@ Ubuntu14.04/Mac Python2.7.9+
 	pip install flask
 	pip install paho-mqtt
 	export FLASK_APP=server.py
-	python -m flask run --host=0.0.0.0#flask语法，=run server.py, host默认是127.0.0.1,需要手动改为接受所有ip的请求
+	python -m flask run --host=0.0.0.0 #flask语法，=run server.py, host默认是127.0.0.1,需要手动改为接受所有ip的请求
+	# nohup python -m flask run --host=0.0.0.0 & #后台运行 
 
 访问 your_ip:5000 可以看到收到的mqtt包的数目
 
